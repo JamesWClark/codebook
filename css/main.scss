@@ -24,6 +24,14 @@ footer {
   background-color: $DARK_BLUE;
 }
 
+main {
+  display: flex;
+  
+  nav {
+    width: 200px;
+  }
+}
+
 .block {
   display: block;
 }
@@ -69,4 +77,20 @@ footer {
 .bottom {
   align-items: flex-end;
   vertical-align: bottom;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
+img.arrow {
+  content: url('/img/icon_small_arrow-right.png');
+}
+
+.sub-section a {
+  display: block;
 }

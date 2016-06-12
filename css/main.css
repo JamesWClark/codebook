@@ -9,6 +9,11 @@ header {
 footer {
   background-color: #003074; }
 
+main {
+  display: flex; }
+  main nav {
+    width: 200px; }
+
 .block {
   display: block; }
 
@@ -53,5 +58,17 @@ footer {
 .bottom {
   align-items: flex-end;
   vertical-align: bottom; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: initial; }
+
+img.arrow {
+  content: url("/img/icon_small_arrow-right.png"); }
+
+.sub-section a {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */

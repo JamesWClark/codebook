@@ -2,8 +2,8 @@
 <html ng-app="codebook">
   
   <head>
-    <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/themes/atelier-forest-light.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/themes/atelier-forest-light.css">
+    <link rel="stylesheet" href="/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
   </head>
@@ -15,7 +15,13 @@
     </header>
     
     <main>
-      <div ng-include="'/code/java/variables/integer.html'" onload="prettify();"></div>
+     
+      <div id="lang"></div>
+      
+      <nav ng-include="'/nav/master.html'"></nav>
+
+      <pre class="prettyprint"><code id="code-container" class="language-java" ng-include="'/code/java/variables/integer.java'" onload="prettify();"></code></pre>
+    
     </main>
     
     <footer>
